@@ -6,11 +6,57 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <h1>Welcome!</h1>
-  <p>
-    Please, develop the Guepardo's home screeen here
-  </p>
-  <script src="app.js"></script>
+  <div class="container">
+    <header>     
+      <img src="./assets/logo@3x.png" alt="logo.png">
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <div class="banner">
+          <h2>Entregando Cargas e Sonhos</h2>
+          <h4>Desde 1980 entregando cargas e fazemos pessoas e negócio sorrirem e se realizarem.</h4>
+          <img align="right" src="./assets/banner.jpg" alt="banner.jpg">
+      </div>
+    </aside>
+    <main>
+        <div class="servicos">
+          <div class="textoServ">
+            <h2>Entregas rápidas e eficientes</h2>
+            <h4>
+              Temos experiência na entrega de cargas para pessoas e empresas em tempo recorde para todo
+              o Brasil.
+            </h4>
+          </div>
+          <img src="./assets/relogio.png" alt="relogio.png">
+        </div>
+        <div class="contato">
+          <div class="formulario">
+            <h2>Fale conosco</h2>
+            <form id="form" action="http://mockbin.org/bin/ccaab130-0701-4d0f-b896-9b3f2baeb02c/log" method="POST">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="João da Silva" required>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="joao@suaempresa.com" required>
+              <label for="mensagem">Mensagem</label>
+              <textarea id="message" name="message" rows="10" required></textarea>
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
+          <img src="./assets/baloes.png" alt="baloes.png">
+        </div>
+    </main>
+    <footer>
+      <p>&copy; 2021 Guepardo Transportes</p>
+    </footer>
+  </div>
+<script src="app.js"></script>
 </body>
 </html>
 
